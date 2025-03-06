@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Cloud &amp; Quill - Misscha Chidley&#x27;s Digital Portfolio",
+    "description": "",
+    "home_page_url": "https://misscha489.github.io",
+    "feed_url": "https://misscha489.github.io/feed.json",
+    "user_comment": "",
+    "icon": "https://misscha489.github.io/media/website/Cloud-and-Quill-Logo.webp",
+    "author": {
+        "name": "Misscha Chidley"
+    },
+    "items": [
+    ]
+}

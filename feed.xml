@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>Cloud &amp; Quill - Misscha Chidley&#x27;s Digital Portfolio</title>
+    <link href="https://misscha489.github.io/feed.xml" rel="self" />
+    <link href="https://misscha489.github.io" />
+    <updated>1969-12-31T20:00:00-04:00</updated>
+    <author>
+        <name>Misscha Chidley</name>
+    </author>
+    <id>https://misscha489.github.io</id>
+
+</feed>
