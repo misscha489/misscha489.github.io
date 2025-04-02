@@ -1,0 +1,65 @@
+@mixin styles {
+  /* Framework color */
+  --main-bg: #FAF7F5; /* Off-White */
+  --mask-bg: #C1C3C5;
+  --main-border-color: #E89DA6; /* Dusk Rose */
+
+  /* Common color */
+  --text-color: #34343C;
+  --text-muted-color: #757575;
+  --text-muted-highlight-color: inherit;
+  --heading-color: #E89DA6; /* Dusk Rose */
+  --label-color: #585858;
+  --blockquote-border-color: #EEEEEE;
+  --blockquote-text-color: #757575;
+  --link-color: #E89DA6; /* Dusk Rose */
+  --link-underline-color: #B76E79; /* Rose Gold */
+  --button-bg: #FFFFFF;
+  --btn-border-color: #E9ECEF;
+  --btn-backtotop-color: #686868;
+  --btn-backtotop-border-color: #F1F1F1;
+  --checkbox-color: #C5C5C5;
+  --checkbox-checked-color: var(--link-color);
+  --img-bg: radial-gradient(circle, #FFFFFF 0%, #EFEFEF 100%);
+  --shimmer-bg: linear-gradient(90deg, rgba(250, 250, 250, 0) 0%, rgba(232, 230, 230, 1) 50%, rgba(250, 250, 250, 0) 100%);
+
+  /* Sidebar */
+  --site-title-color: #E89DA6;  /* Dusk Rose */
+  --site-subtitle-color: #717171;
+  --sidebar-bg: #F6F8FA;
+  --sidebar-border-color: #EFEFEF;
+  --sidebar-muted-color: #545454;
+  --sidebar-active-color: #E89DA6;  /* Dusk Rose */
+  --sidebar-hover-bg: rgba(223, 233, 241, 0.64);
+  --sidebar-btn-bg: #FFFFFF;
+  --sidebar-btn-color: #8E8E8E;
+  --avatar-border-color: #E89DA6;  /* Dusk Rose */
+
+  /* Topbar */
+  --topbar-bg: rgba(255, 255, 255, 0.7);
+  --topbar-text-color: #4E4E4E;
+  --search-border-color: #F0F0F0;
+  --search-icon-color: #C2C6CC;
+  --input-focus-border-color: #B8B8B8;
+
+  /* Posts */
+  --toc-highlight: #E89DA6; /* Dusk Rose */
+  --toc-popup-border-color: lightgray;
+  --btn-share-color: gray;
+  --btn-share-hover-color: #0D6EFD;
+  --card-bg: #FFFFFF;
+  --card-hover-bg: #E2E2E2;
+  --card-shadow: rgba(104, 104, 104, 0.05) 0 2px 6px 0, rgba(211, 209, 209, 0.15) 0 0 0 1px;
+
+  /* Tags */
+  --tag-border: #DEE2E6;
+  --tag-shadow: var(--btn-border-color);
+  --tag-hover: #DEE2E6;
+  --search-tag-bg: #F8F9FA;
+
+  /* Code highlight colors */
+  --highlight-bg-color: #F6F8FA;
+  --code-color: #34343C;
+  --inline-code-bg: rgba(25, 25, 28, 0.05);
+  --clipboard-checked-color: #43C743;
+}

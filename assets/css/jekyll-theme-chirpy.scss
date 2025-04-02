@@ -1,0 +1,26 @@
+---
+---
+
+@use 'main'
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+;
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora:wght@400;700&display=swap');
+
+/* Custom Font Variables */
+:root {
+  --font-heading: 'DM Serif Display', serif;
+  --font-body: 'Lora', serif;
+}
+
+/* Apply Fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+body {
+  font-family: var(--font-body);
+}
