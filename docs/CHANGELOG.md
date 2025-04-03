@@ -18,6 +18,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Set up essential pages: Home, About, Contact Services, and Profiles.
 - Implemented **Jekyll-Admin** for easier content management.
 - Added **CONTENT_LICENSE** CC BY-NC 4.0 with *encouraged notification*.
+- **Dark theme** configuration to 90% completion.
+- **Light theme** configuration to acceptable completion.
 
 ### Changed
 
