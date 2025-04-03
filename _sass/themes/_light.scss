@@ -1,24 +1,24 @@
 @mixin styles {
   /* Framework color */
-  --main-bg: white;
+  --main-bg: #f6f1ee; /* Light Beige */
   --mask-bg: #c1c3c5;
-  --main-border-color: #f3f3f3;
+  --main-border-color: #e9969f; /* Rose */
 
   /* Common color */
   --text-color: #34343c;
   --text-muted-color: #757575;
   --text-muted-highlight-color: inherit;
-  --heading-color: #2a2a2a;
+  --heading-color: #e9969f; /* Rose */
   --label-color: #585858;
-  --blockquote-border-color: #eeeeee;
+  --blockquote-border-color: #9696e9; /* Lavender */
   --blockquote-text-color: #757575;
   --link-color: #0056b2;
-  --link-underline-color: #dee2e6;
+  --link-underline-color: #e9969f; /* Rose */
   --button-bg: #ffffff;
-  --btn-border-color: #e9ecef;
+  --btn-border-color: #e9969f; /* Rose */
   --btn-backtotop-color: #686868;
   --btn-backtotop-border-color: #f1f1f1;
-  --checkbox-color: #c5c5c5;
+  --checkbox-color: #9696e9; /* Lavender */
   --checkbox-checked-color: #07a8f7;
   --img-bg: radial-gradient(
     circle,
@@ -33,16 +33,16 @@
   );
 
   /* Sidebar */
-  --site-title-color: rgb(113, 113, 113);
+  --site-title-color: #e9969f; /* Rose */
   --site-subtitle-color: #717171;
   --sidebar-bg: #f6f8fa;
-  --sidebar-border-color: #efefef;
+  --sidebar-border-color: #9696e9; /* Lavender */
   --sidebar-muted-color: #545454;
-  --sidebar-active-color: #1d1d1d;
+  --sidebar-active-color: #e9969f; /* Rose */
   --sidebar-hover-bg: rgb(223, 233, 241, 0.64);
   --sidebar-btn-bg: white;
   --sidebar-btn-color: #8e8e8e;
-  --avatar-border-color: white;
+  --avatar-border-color: #9696e9; /* Lavender */
 
   /* Topbar */
   --topbar-bg: rgb(255, 255, 255, 0.7);

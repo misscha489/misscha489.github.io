@@ -7,4 +7,21 @@
 {%- endif -%}
 ';
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+
 /* append your custom style below */
+
+/* Custom Font Overrides */
+body {
+  font-family: "Lora", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+code, pre, kbd, samp {
+  font-family: "JetBrains Mono", monospace;
+}
+

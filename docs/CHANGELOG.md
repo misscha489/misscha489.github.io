@@ -15,8 +15,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Initial setup and deployment of the site using Jekyll.
 - Configured and customized the **Chirpy** theme for personal use.
-- Set up essential pages: Home, About, Services, and Profiles.
+- Set up essential pages: Home, About, Contact Services, and Profiles.
 - Implemented **Jekyll-Admin** for easier content management.
+- Added **CONTENT_LICENSE** CC BY-NC 4.0 with *encouraged notification*.
 
 ### Changed
 
