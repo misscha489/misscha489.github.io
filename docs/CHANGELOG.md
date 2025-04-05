@@ -20,6 +20,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Added **CONTENT_LICENSE** CC BY-NC 4.0 with *encouraged notification*.
 - **Dark theme** configuration to 90% completion.
 - **Light theme** configuration to acceptable completion.
+- Modified page sidebar order to be as follows
+	1. Qualifications
+		1. CV
+		2. Resume
+		3. Skills 
+		4. Tools
+		5. Feedback
+	2. Services
+		1. Virtual Assistance
+		2. Data Entry
+		3. Etc.
+	3. Shop (reserved)
+	4. About
+		1. Contact
+		2. Profiles
+	5. Categories
+	6. Tags
+	7. Archives
 
 ### Changed
 

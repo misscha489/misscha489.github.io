@@ -11,22 +11,16 @@
       {%- endif -%}
     </a>
 
-    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+   <a class="site-title d-block" href="{{ page.lang | prepend: '/' | append: '/' | relative_url }}">{{ site.title }}</a>
+
     <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
   </header>
   <!-- .profile-wrapper -->
 
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
-      <!-- home -->
-      <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
-        <a href="{{ '/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
-          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
-        </a>
-      </li>
       <!-- the real tabs -->
-      {% for tab in site.tabs %}
+      {% for tab in site.data.tabs %}
         <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">
             <i class="fa-fw {{ tab.icon }}"></i>
@@ -40,6 +34,26 @@
     </ul>
   </nav>
 
+<!-- Language Switcher -->
+<div class="sidebar-btn-wrapper lang-switcher">
+  <button id="lang-toggle" class="btn" aria-label="Language Switcher">
+    <i class="fas fa-language" aria-hidden="true"></i>
+    {{ page.lang | upcase }}
+  </button>
+<ul id="lang-dropdown" class="dropdown lang-dropdown">
+  {% for lang in site.alt_lang %}
+    {% if lang != page.lang %}
+    <li>
+      <a href="/{{ lang }}/">{{ lang | upcase }}</a>
+    </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+</div>
+
+
+
+<!-- Theme Mode Switcher -->
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% unless site.theme_mode %}
       <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
@@ -51,17 +65,26 @@
       {% endif %}
     {% endunless %}
 
+
     {% for entry in site.data.contact %}
       {% case entry.type %}
         {% when 'github', 'twitter' %}
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
-        {% when 'email' %}
-          {% assign email = site.social.email | split: '@' %}
-          {%- capture url -%}
-            javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
-          {%- endcapture -%}
+
+<!-- Contact Link -->
+	{% when 'contact' %}
+		{%- assign lang_prefix = page.lang | default: 'en' -%}
+      {%- capture url -%} 
+		 /{{ lang }}/about/contact/
+      {%- endcapture -%}
+	{% else %}
+      {%- capture url -%}
+        {{ site[entry.type] }}
+      {%- endcapture -%}
+
+<!-- RSS Feed -->	  
         {% when 'rss' %}
           {% assign url = '/feed.xml' | relative_url %}
         {% else %}

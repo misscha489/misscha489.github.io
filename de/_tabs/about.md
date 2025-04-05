@@ -3,7 +3,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-
+![avatar2.webp](\assets\img\avatar2.webp)
 Hi, I’m Misscha Chidley—a detail-oriented Virtual Assistant with a strong focus on organization, efficiency, and continuous improvement. I thrive on structuring both digital and physical spaces, ensuring that workflows are smooth, documents are well-managed, and everything is in its right place.  
   
 With a proficiency in administrative support, document organization, and a willingness to learn and adapt, I bring a meticulous approach to every task. Whether it’s sorting through complex files, managing schedules, or optimizing processes, I aim to make operations seamless and stress-free.  

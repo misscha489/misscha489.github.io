@@ -3,7 +3,7 @@
 
   /* Framework color */
   --main-bg: #262626; /* Charcoal */
-  --mask-bg: #9ce89c; /*Test Color - Replace */
+  --mask-bg: #bfbfbf; /*Test Color - Replace */
   --main-border-color: #e9969f; /* Rose */
 
   /* Common color */
@@ -20,7 +20,7 @@
   --btn-border-color: #e9969f; /* Rose */
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: #fbeaec; /* Light Rose */
-  --card-header-bg: #9ce89c; /*Test Color - Replace */
+  --card-header-bg: #0d0d3f; /* Deep Violet */
   --checkbox-color: #9696e9; /* Lavender */
   --checkbox-checked-color: var(--link-color);
   --img-bg: radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(32, 32, 32) 100%);
@@ -56,7 +56,7 @@
   --btn-paginator-hover-color: #2e2e2e;
 
   /* Posts */
-  --toc-highlight: rgb(116, 178, 243);
+  --toc-highlight: #9696e9; /* Lavender */
   --toc-popup-border-color: #373737;
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
@@ -170,6 +170,17 @@
   #disqus_thread {
     color-scheme: none;
   }
+  
+/* Language Switcher */
+.lang-switcher button {
+  color: #eaeafb; /* Soft Lavender */
+  background-color: #0d0d3f; /* Deep Violet */
+  
+  &:hover {
+    color: #e9969f; /* Rose */
+    background-color: #0d0d3f; /* Deep Violet */
+  }
+}
 
   /* --- Syntax highlight theme from `rougify style base16.dark` --- */
 
