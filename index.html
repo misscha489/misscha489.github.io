@@ -1,0 +1,39 @@
+---
+layout: home
+lang: en
+pagination:
+  enabled: true
+ref: home
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting...</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Supported language codes (no region variants)
+      const supportedLangs = ["en", "es", "de"];
+      const defaultLang = "en";
+
+      // Get user language
+      const userLang = navigator.language || navigator.userLanguage || defaultLang;
+      const langCode = userLang.split("-")[0]; // 'es-PR' -> 'es'
+
+      // Fallback to default if not supported
+      const finalLang = supportedLangs.includes(langCode) ? langCode : defaultLang;
+
+      // Redirect
+      window.location.href = "/" + finalLang + "/";
+    });
+  </script>
+  <!-- Fallback for no-JS -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

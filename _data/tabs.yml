@@ -1,0 +1,27 @@
+- title: Home
+  url: /en/
+  icon: fas fa-home
+
+- title: Qualifications
+  url: /en/qualifications/
+  icon: fas fa-id-card
+
+- title: Services
+  url: /en/services/
+  icon: fas fa-concierge-bell
+
+- title: About
+  url: /en/about/
+  icon: fas fa-user
+
+- title: Categories
+  url: /en/categories/
+  icon: fas fa-folder-open
+
+- title: Tags
+  url: /en/tags/
+  icon: fas fa-tags
+
+- title: Archives
+  url: /en/archives/
+  icon: fas fa-archive

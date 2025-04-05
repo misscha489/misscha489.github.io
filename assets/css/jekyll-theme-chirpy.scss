@@ -1,0 +1,78 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+
+/* append your custom style below */
+
+/* Custom Font Overrides */
+body {
+  font-family: "Lora", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+code, pre, kbd, samp {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* space between icon and text */
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .lang-dropdown {
+    display: none;
+    background: var(--sidebar-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 0.5rem;
+    z-index: 10;
+    list-style: none;
+    text-align: center;
+  }
+
+  .lang-dropdown.show {
+    display: block;
+  }
+
+  .lang-dropdown li {
+    margin: 0.2rem 0;
+  }
+
+  .lang-dropdown a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .lang-dropdown a:hover {
+    text-decoration: underline;
+  }
+}
