@@ -1,8 +1,0 @@
----
-layout: home
-lang: en
-pagination:
-  enabled: true
-ref: home
----
-
