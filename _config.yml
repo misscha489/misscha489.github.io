@@ -6,46 +6,47 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: "en"
-alt_lang: ["en", "es", "de"]
+lang: en
+
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: America/Puerto_Rico #Europe/Berlin
+timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Cloud & Quill # the main title
+title: Chirpy # the main title
 
-tagline: Bringing charm and efficiency to every project. # it will display as the subtitle
+tagline: A text-focused Jekyll theme # it will display as the subtitle
 
-description: A virtual assistant with a love for cute aesthetics, seamless organization, and making work feel effortless! # used by seo meta and the atom feed A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >- # used by seo meta and the atom feed
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://misscha489.github.io"
+url: ""
 
 github:
-  username: misscha489 # change to your GitHub username
+  username: github_username # change to your GitHub username
 
 twitter:
-  username: MisschaLiz # change to your Twitter username
+  username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Misscha_Chidley
-  email: misscha489@proton.me # change to your email address
+  name: your_full_name
+  email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/MisschaLiz # change to your Twitter homepage
-    - https://github.com/misscha489 # change to your GitHub homepage
+    - https://twitter.com/username # change to your Twitter homepage
+    - https://github.com/username # change to your GitHub homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/misscha489
-    - https://www.linkedin.com/in/misscha
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
 webmaster_verifications:
-  google: 903YdheSy3UliJfBFYorYIdcdLuq7K1xfg4GE5vYbsA
+  google: # fill in your Google verification code
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
@@ -94,14 +95,14 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# cdn: "https://chirpy-img.netlify.app"
+cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/avatar.webp"
+avatar: "/commons/avatar.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: "/assets/preview.webp" # string, local or CORS resources
+social_preview_image: # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -115,7 +116,7 @@ comments:
   # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | titletitle | ...>
+    issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
@@ -164,6 +165,11 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
 defaults:
   - scope:
@@ -218,6 +224,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-plugins:
-  - jekyll-admin
