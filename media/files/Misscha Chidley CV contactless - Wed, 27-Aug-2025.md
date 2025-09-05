@@ -8,7 +8,7 @@ published: false
 # Misscha Chidley
 
 **Virtual Administrative & Technical Support | Data Management & Workflow Optimization | Problem-Solving Specialist**  
-Bayamon, PR, USA 00957 | 1-787-321-9054 | misscha489@gmail.com | [https://rebrand.ly/misscha489](https://rebrand.ly/misscha489)
+Bayamon, PR, USA 00957 | [https://rebrand.ly/misscha489](https://rebrand.ly/misscha489)
 
 ---
 ## Summary
